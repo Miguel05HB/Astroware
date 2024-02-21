@@ -11,7 +11,9 @@ function AboutUs() {
             borderBottomLeftRadius: 0,
           }}
         >
-          <h1 className="text-xl font-bold mb-3 text-center">¿Qué Somos?</h1>
+          <h1 className="text-xl font-bold mb-3 text-center">
+            ¿Quienes Somos?
+          </h1>
           <hr
             className="mb-3 rounded-xl"
             style={{

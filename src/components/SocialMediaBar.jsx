@@ -1,11 +1,11 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import facebook from '@/assets/redes/facebook.webp';
-import instagram from '@/assets/redes/instagram.webp';
-import youtube from '@/assets/redes/youtube.webp';
-import tiktok from '@/assets/redes/tik-tok.webp';
-import whatsapp from '@/assets/redes/whatsapp.webp';
+import facebook from '@/assets/redes/facebook.svg';
+import instagram from '@/assets/redes/instagram.svg';
+import youtube from '@/assets/redes/youtube.svg';
+import tiktok from '@/assets/redes/tiktok.svg';
+import whatsapp from '@/assets/redes/whatsapp.svg';
 
 const socialMediaIcons = [
   {
@@ -43,20 +43,21 @@ const SocialMediaBar = () => {
       setIsFixed(window.innerWidth > 1060);
     };
 
-    // Ejecutar la función de manejo de redimensionamiento cuando la ventana cambie de tamaño
+    handleResize();
     window.addEventListener('resize', handleResize);
 
-    // Limpia el listener del evento al desmontar el componente
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []); // La matriz vacía asegura que el efecto solo se ejecute una vez al montar el componente
+  }, []);
 
   const containerStyle = {
     position: isFixed ? 'fixed' : 'absolute',
-    top: '50%',
+    top: isFixed ? '50%' : '68%',
     left: '15px',
-    transform: 'translateY(-50%)',
+    transform: isFixed ? 'translateY(-50%)' : 'none',
+    height: '150px',
+    visibility: isFixed ? 'visible' : 'hidden',
   };
 
   return (
