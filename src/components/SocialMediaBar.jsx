@@ -60,15 +60,38 @@ const SocialMediaBar = () => {
     visibility: isFixed ? 'visible' : 'hidden',
   };
 
+  const iconStyle = {
+    transition: 'transform 0.2s',
+  };
+
+  const handleMouseEnter = (index) => {
+    const icons = document.querySelectorAll('.social-icon');
+    icons[index].style.transform = 'scale(1.2)';
+  };
+
+  const handleMouseLeave = (index) => {
+    const icons = document.querySelectorAll('.social-icon');
+    icons[index].style.transform = 'scale(1)';
+  };
+
   return (
     <div style={containerStyle} className="flex flex-col">
       {socialMediaIcons.map((socialMedia, index) => (
-        <a key={index} href={socialMedia.url} className="mb-4" target="_blank">
+        <a
+          key={index}
+          href={socialMedia.url}
+          className="mb-4"
+          target="_blank"
+          onMouseEnter={() => handleMouseEnter(index)}
+          onMouseLeave={() => handleMouseLeave(index)}
+        >
           <Image
             src={socialMedia.iconPath}
             alt={socialMedia.name}
             width={32}
             height={32}
+            style={iconStyle}
+            className="social-icon"
           />
         </a>
       ))}

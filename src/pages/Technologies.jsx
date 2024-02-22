@@ -1,4 +1,4 @@
-import CircleIcon from './CircleIcon';
+import CircleIcon from '../components/CircleIcon';
 import universeImg from '@/assets/img/universe-logo.webp';
 
 // Iconos de Tecnologias

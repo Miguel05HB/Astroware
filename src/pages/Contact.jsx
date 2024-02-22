@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import ContactForm from './ContactForm';
+import ContactForm from '../components/ContactForm';
 import whatsappIcon from '@/assets/redes/whatsapp.svg';
 import gmailIcon from '@/assets/redes/gmail.webp';
 

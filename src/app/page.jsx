@@ -1,12 +1,12 @@
-import Hero from '@/components/Hero';
-import Services from '@/components/Services';
-import Technologies from '@/components/Technologies';
-import Proyects from '@/components/Proyects';
-import AboutUs from '@/components/AboutUs';
+import Hero from '@/pages/Hero';
+import Services from '@/pages/Services';
+import Technologies from '@/pages/Technologies';
+import Proyects from '@/pages/Proyects';
+import AboutUs from '@/pages/AboutUs';
 import Image from 'next/image';
 import nubeImg from '@/assets/img/nube.svg';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
+import Contact from '@/pages/Contact';
+import Footer from '@/pages/Footer';
 
 function HomePage() {
   return (

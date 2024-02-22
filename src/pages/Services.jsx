@@ -4,7 +4,7 @@ import iconService2 from '@/assets/img/iconservice2.webp';
 import iconService3 from '@/assets/img/iconservice3.webp';
 import iconService4 from '@/assets/img/iconservice4.webp';
 import Image from 'next/image';
-import ButtonServices from './ButtonServices';
+import ButtonServices from '../components/ButtonServices';
 
 function Services() {
   return (
