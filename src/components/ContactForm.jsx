@@ -6,10 +6,6 @@ import Swal from 'sweetalert2';
 import footerPlant from '@/assets/img/footer-plant.svg';
 
 const ContactForm = () => {
-  const serviceId = process.env.SERVICE_ID;
-  const password = process.env.PASSWORD;
-  const publicKey = process.env.PUBLIC_KEY;
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -221,7 +217,7 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={loading}
-            className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${
+            className={`bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${
               loading && 'opacity-50 cursor-not-allowed'
             }`}
           >

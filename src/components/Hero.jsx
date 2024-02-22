@@ -12,7 +12,7 @@ function Hero() {
             priority={true}
             className="inline-block"
             width={700}
-            height={500}
+            height={'auto'}
             alt="AstroWare"
           />
         </div>
@@ -20,7 +20,7 @@ function Hero() {
           Más Allá del Diseño,
           <br />
           Creamos
-          <a className="text-purple-800"> conexiones digitales</a>
+          <span className="text-purple-800"> conexiones digitales</span>
           <span>...</span>
         </p>
       </div>

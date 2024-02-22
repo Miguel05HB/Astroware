@@ -1,5 +1,5 @@
 import CircleIcon from './CircleIcon';
-import imagen from '@/assets/img/universe-logo.webp';
+import universeImg from '@/assets/img/universe-logo.webp';
 
 // Iconos de Tecnologias
 import icon1 from '@/assets/icons/icon1.webp';
@@ -56,8 +56,11 @@ function Technologies() {
         <h1 className="text-5xl mb-12 font-bold mt-5">Tecnologías</h1>
         <h2 className="text-2xl">
           En AstroWare, construimos páginas
-          <a className="text-purple-800"> web personalizadas</a> utilizando las
-          últimas y más <br />
+          <span className="text-purple-800 cursor-pointer">
+            {' '}
+            web personalizadas
+          </span>{' '}
+          utilizando las últimas y más <br />
           potentes tecnologías.
         </h2>
         <p className="text-base text-gray-700 dark:text-gray-400  mt-8">
@@ -90,10 +93,10 @@ function Technologies() {
         </div>
 
         <Image
-          src={imagen}
+          src={universeImg}
           priority={true}
           width={780}
-          height={380}
+          height={'auto'}
           alt="Universo astroware"
           className="mx-auto mb-16"
         />

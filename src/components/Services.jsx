@@ -43,14 +43,14 @@ function ServiceCard({ image, title, description }) {
       <Image
         src={image}
         width={110}
-        height={110}
+        height={'auto'}
         alt="Service Icon"
         className="mb-4"
       />
       <div className="text-center">
-        <h5 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">
+        <h1 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">
           {title}
-        </h5>
+        </h1>
         <p className="text-base text-gray-700 dark:text-gray-400">
           {description}
         </p>
