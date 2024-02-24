@@ -67,7 +67,7 @@ const ContactForm = () => {
         'template_limwv9r',
         {
           from_name: formData.name,
-          to_name: 'Miguel',
+          to_name: 'Astroware',
           from_email: formData.email,
           from_phone: formData.phone,
           to_email: 'contact@miguelhb.dev',
@@ -232,6 +232,7 @@ const ContactForm = () => {
           height={273}
           alt="Service Icon"
           className="mx-auto md:mx-0"
+          priority
         />
       </div>
     </div>

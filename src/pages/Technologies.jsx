@@ -56,14 +56,11 @@ function Technologies() {
         <h1 className="text-5xl mb-12 font-bold mt-5">Tecnologías</h1>
         <h2 className="text-2xl">
           En AstroWare, construimos páginas
-          <span className="text-purple-800 cursor-pointer">
-            {' '}
-            web personalizadas
-          </span>{' '}
+          <span className="text-purple-800"> web personalizadas</span>{' '}
           utilizando las últimas y más <br />
           potentes tecnologías.
         </h2>
-        <p className="text-base text-gray-700 dark:text-gray-400  mt-8">
+        <p className="text-base text-gray-400  mt-8">
           Nuestra empresa de desarrollo de software se compromete con la
           excelencia al integrar tecnologías avanzadas para asegurar un diseño
           moderno y una experiencia de usuario excepcional. Además, destacamos

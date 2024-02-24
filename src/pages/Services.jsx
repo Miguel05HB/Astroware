@@ -48,12 +48,8 @@ function ServiceCard({ image, title, description }) {
         className="mb-4"
       />
       <div className="text-center">
-        <h1 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">
-          {title}
-        </h1>
-        <p className="text-base text-gray-700 dark:text-gray-400">
-          {description}
-        </p>
+        <h1 className="text-2xl font-bold mb-2 text-white">{title}</h1>
+        <p className="text-base text-gray-400">{description}</p>
       </div>
     </div>
   );

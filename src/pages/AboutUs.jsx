@@ -1,5 +1,3 @@
-import React from 'react';
-
 function SectionTitle({ text }) {
   return <h1 className="text-5xl mb-12 font-bold text-center">{text}</h1>;
 }
@@ -9,7 +7,6 @@ function ContentBlock({ title, content }) {
     <div
       className="text-md bg-gradient-to-br from-purple-800 to-black rounded-3xl p-8 md:p-14 shadow-md"
       style={{
-        backgroundColor: 'rgb(200, 199, 250)',
         borderTopRightRadius: 0,
         borderBottomLeftRadius: 0,
       }}
@@ -23,7 +20,7 @@ function ContentBlock({ title, content }) {
           border: 'none',
         }}
       />
-      <p className="text-base text-gray-700 dark:text-gray-400">{content}</p>
+      <p className="text-base text-gray-400">{content}</p>
     </div>
   );
 }

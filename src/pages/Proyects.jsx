@@ -20,7 +20,7 @@ function Proyecto({ tituloPequeño, titulo, descripcion, imagen, index }) {
           {tituloPequeño}
         </h2>
         <h1 className="text-4xl font-bold mb-4">{titulo}</h1>
-        <p className="text-lg mb-4 rounded-lg text-white border-s-2 border-purple-800 p-4 shadow-md">
+        <p className="text-lg mb-4 rounded-lg text-gray-400 border-s-2 border-purple-800 p-4 shadow-md">
           {descripcion}
         </p>
       </div>

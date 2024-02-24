@@ -7,7 +7,7 @@ import youtube from '@/assets/redes/youtube.svg';
 import tiktok from '@/assets/redes/tiktok.svg';
 import whatsapp from '@/assets/redes/whatsapp.svg';
 
-const socialMediaIcons = [
+export const socialMediaIcons = [
   {
     name: 'Facebook',
     iconPath: facebook,
@@ -58,7 +58,7 @@ const SocialMediaBar = () => {
     transform: isFixed ? 'translateY(-50%)' : 'none',
     height: '150px',
     visibility: isFixed ? 'visible' : 'hidden',
-    zIndex: 9999, // Ajustamos el z-index para que esté por delante de otros elementos
+    zIndex: 9999,
   };
 
   const iconStyle = {

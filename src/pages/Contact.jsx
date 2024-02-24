@@ -9,7 +9,7 @@ function Contact() {
     <div className="min-h-screen flex justify-center items-center text-center px-4">
       <div className="max-w-4xl">
         <h1 className="text-5xl mb-6 font-bold mt-5">Contactanos</h1>
-        <p className="text-start mb-6">
+        <p className="text-start mb-6 text-gray-400">
           ¿Listo para llevar tu proyecto al siguiente nivel? Nos encantaría ser
           parte de tu éxito. Conéctate con nosotros para explorar cómo nuestros
           servicios de desarrollo de software pueden transformar tus ideas en

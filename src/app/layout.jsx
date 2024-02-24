@@ -2,6 +2,8 @@ import Navbar from '@/components/Navbar';
 import './globals.css';
 import { Poppins } from 'next/font/google';
 import SocialMediaBar from '@/components/SocialMediaBar';
+import StarsCanvas from '@/components/StarBackground';
+import Hero from '@/components/Hero';
 
 const inter = Poppins({
   subsets: ['latin'],
@@ -21,6 +23,10 @@ export default function RootLayout({ children }) {
         className={`${inter.className} overflow-y-scroll overflow-x-hidden`}
       >
         <Navbar />
+        <div className="absolute top-0 w-full h-[810px] flex flex-col gap-20 justify-center items-center z-0">
+          <Hero />
+        </div>
+        <StarsCanvas />
         <SocialMediaBar />
         {children}
       </body>

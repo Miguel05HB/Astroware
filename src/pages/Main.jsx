@@ -6,9 +6,6 @@ import Hero from '@/components/Hero';
 function MainPage() {
   return (
     <div className="relative flex flex-col justify-center items-center min-h-screen">
-      <div className="absolute top-0 w-full h-[810px] flex flex-col gap-20 justify-center items-center z-0">
-        <Hero />
-      </div>
       <div className="text-center mb-14 z-10">
         <div className="mx-auto" style={{ maxWidth: '70vw' }}>
           <Image

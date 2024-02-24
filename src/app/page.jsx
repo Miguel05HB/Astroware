@@ -3,8 +3,6 @@ import Services from '@/pages/Services';
 import Technologies from '@/pages/Technologies';
 import Proyects from '@/pages/Proyects';
 import AboutUs from '@/pages/AboutUs';
-import Image from 'next/image';
-import nubeImg from '@/assets/img/nube.svg';
 import Contact from '@/pages/Contact';
 import Footer from '@/pages/Footer';
 
