@@ -1,16 +1,20 @@
 import React from 'react';
 import imageHome from '@/assets/img/home.webp';
 import Image from 'next/image';
+import Hero from '@/components/Hero';
 
-function Hero() {
+function MainPage() {
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen">
-      <div className="text-center mb-14">
+    <div className="relative flex flex-col justify-center items-center min-h-screen">
+      <div className="absolute top-0 w-full h-[810px] flex flex-col gap-20 justify-center items-center z-0">
+        <Hero />
+      </div>
+      <div className="text-center mb-14 z-10">
         <div className="mx-auto" style={{ maxWidth: '70vw' }}>
           <Image
             src={imageHome}
             priority={true}
-            className="inline-block"
+            className="inline-block mt-24"
             width={700}
             height={'auto'}
             alt="AstroWare"
@@ -24,7 +28,7 @@ function Hero() {
           <span>...</span>
         </p>
       </div>
-      <div className="bg-transparent border border-white p-3">
+      <div className="bg-transparent border border-white p-3 z-10">
         <p className="text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl font-bold">
           Hosting y Dominio gratis el primer año.
         </p>
@@ -33,4 +37,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default MainPage;

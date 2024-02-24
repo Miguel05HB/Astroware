@@ -1,4 +1,4 @@
-import Hero from '@/pages/Hero';
+import Main from '@/pages/Main';
 import Services from '@/pages/Services';
 import Technologies from '@/pages/Technologies';
 import Proyects from '@/pages/Proyects';
@@ -13,7 +13,7 @@ function HomePage() {
     <div className="">
       <main className="mx-auto contenedor-main text-white">
         <section id="inicio">
-          <Hero />
+          <Main />
         </section>
         <section id="servicios">
           <Services />
@@ -24,16 +24,13 @@ function HomePage() {
         <section id="proyectos">
           <Proyects />
         </section>
-        <Image src={nubeImg} className="w-full" alt="Nube Layout" />
-      </main>
-      <div id="">
-        <aside id="sobre-nosotros" className="gradient-background">
+        <aside id="sobre-nosotros">
           <AboutUs />
           <div id="contactanos">
             <Contact />
           </div>
         </aside>
-      </div>
+      </main>
       <Footer />
     </div>
   );

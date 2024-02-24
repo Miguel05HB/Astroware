@@ -58,6 +58,7 @@ const SocialMediaBar = () => {
     transform: isFixed ? 'translateY(-50%)' : 'none',
     height: '150px',
     visibility: isFixed ? 'visible' : 'hidden',
+    zIndex: 9999, // Ajustamos el z-index para que esté por delante de otros elementos
   };
 
   const iconStyle = {
