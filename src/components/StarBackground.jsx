@@ -48,6 +48,10 @@ const StarsCanvas = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  if (windowSize.width < 500) {
+    return null;
+  }
+
   return (
     <div
       className="w-full h-full fixed inset-0 z-0 pointer-events-none"
